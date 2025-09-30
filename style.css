@@ -1,0 +1,557 @@
+/* #countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btncontainer {
+    text-align: center;
+}
+.button {
+    padding: 10 px 20 px;
+    font-size: 1.5em;
+    color: white;
+    background-color: hsl(200, 100%, 50%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: hsl(200, 100%, 40%);
+} */
+
+/* <!-- TEMPERATURE CONVERSION PROGRAM --> */
+
+/* body {
+    font-family: Verdana;
+    background-color: hsl(0, 0, 95%);
+}
+h1 {
+    color: rgb(48, 136, 209);
+}
+form {
+    background-color: hsl(0, 0, 100%);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.30);
+}
+#extBox {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.80);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button {
+    margin-top: 15px;
+    background-color: hsl(0, 100%1, 60%);
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+button:hover {
+    background-color: rgba(48, 48, 48, 0.158);
+}
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+} */
+
+/* ----- DICE ROLL PROGRAM ----- */
+
+/* #container{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem; /* rem is for the root /*
+    font-weight: bold;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.733);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 199, 199);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin: 25px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+} */
+
+/* ----- GLOBAL CSS ----- */
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: 0px;
+}
+
+/* ----- CLOCK CSS ----- */
+
+#clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgb(96, 248, 248);
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(96, 248, 248);
+    width: 100%;
+}
+
+/* ----- STOPWATCH CSS ----- */
+
+.head1{
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.753);
+}
+#stopwatch-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgb(96, 248, 248);
+}
+#display{
+    font-size: 75px;
+    font-family: monospace;
+    color: white;
+    background-color: rgb(96, 248, 248);
+    border-radius: 50px;
+}
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#startButton{
+    background-color: rgb(27, 240, 27);
+}
+#startButton:hover{
+    background-color: rgb(20, 129, 38);
+}
+#stopButton{
+    background-color: rgb(255, 10, 18);
+}
+#stopButton:hover{
+    background-color: rgb(167, 27, 27);
+}
+#resetButton{
+    background-color: rgb(0, 81, 255);
+}
+#resetButton:hover{
+    background-color: rgb(26, 41, 170);
+}
+
+/* ----- CALCULATOR CSS ----- */
+
+.buttons{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.815);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    /* fr = fractional unit indicares that each column should take up an even amount of space*/
+    gap: 10px;
+    padding: 25px;
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#screen{
+    width: 80%;
+    padding: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: rgb(228, 228, 228);
+}
+.buttons{
+    transition: background-color 0.2s ease;
+}
+.buttons:hover{
+    background-color: rgba(240, 248, 255, 0.199);
+}
+.buttons:active{
+    background-color: rgba(240, 248, 255, 0.582);
+}
+
+/* ----- ADD & CHANGE HTML ----- */
+
+/* .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    width: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px;
+} */
+
+/* ----- example 2 ----- */
+
+/* #fruits{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 5px solid;
+    width: 380px;
+    padding: 20px;
+} */
+
+/* ----- MOUSE EVENTS ----- */
+
+#mouse-events{
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* ----- KEY EVENTS ----- */
+
+#angry{
+    background-color: none;
+    width: 200px;
+    height: 200px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    border-radius: none;
+    padding: none;
+}
+
+/* ----- HIDE AN ELEMENTS ----- */
+
+#hide{
+    color: red;
+    font-family: Arial;
+    background-color: antiquewhite;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+/* ----- NODE LIST ----- */
+
+/* .node-list{
+    font-size: 4em;
+    margin: 10px;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 15px;
+    background-color: hsl(202, 100%, 60%);
+    color: white;
+} */
+
+/* ----- CLASS LIST ----- */
+
+/* #class-list{
+    font-size: 4em;
+    margin: 10px;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 15px;
+}
+.enabled{
+    background-color: chartreuse;
+    color: darkorange;
+}
+.hover{
+    box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.2);
+    font-weight: bold;
+}
+.disabled{
+    background-color: purple;
+    color: hsl(0, 0%, 50%)
+} */
+
+/* ----- another example ----- */
+
+/* .button-class{
+    font-size: 4em;
+    margin: 10px;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 15px;
+} */
+
+/*  ROCK PAPER SCISSOR PROGRAM  */
+
+.choices{
+    margin-bottom: 30px;
+}
+.choices button{
+    background-color: rgb(255, 102, 0);
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 10px 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+.choices button:hover{
+    background-color: rgb(238, 255, 0);
+}
+#playerDisplay, #computerDisplay{
+    margin: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(59, 59, 59);
+}
+#resultDisplay{
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial;    
+    font-size: 7rem;
+    margin: 30px 0;
+}
+.scoreDisplay{
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial;   
+}
+.greenText, #playerScoreDisplay{
+    color: rgb(4, 179, 4);
+}
+.redText, #computerScoreDisplay{
+    color: rgb(223, 4, 4);   
+}
+
+/*  IMAGE SLIDER  */
+
+.slides{
+    display: flex;
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 150px;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.prev{
+    left: 100px;
+}
+.next{
+    right: 100px;
+}
+.slider img{
+    width: 650px;
+    height: 1000px;
+    display: contents;
+    border-radius: 30px;
+    opacity: 95%;
+    animation-name: fade;
+    animation: 1.5s;
+}
+img.displaySlide{
+    display: block;
+}
+@keyframes fade{
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+/*  ----- FETCH DATA ----- */
+
+#pokemonName{
+    font-size: 40px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.562);
+    border: none;
+    border-radius: 15px;
+    text-align: center;  
+}
+#pokemonName::placeholder{
+    color: white;
+    text-align: center;
+}
+#pokemonName:focus::placeholder {
+  color: transparent; 
+}
+#search-button{
+    border-radius: 15px;
+    border: none;
+    font-size: 40px;
+}
+#pokemonSprite{
+    width: 450px;
+    height: 500px; 
+}
+
+/*  ----- BUILD WEATHER APP AND FETCH DATA FROM API ----- */
+
+.weather-form{
+    margin: 20px;
+}
+.cityInput{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsl(0, 0%, 20%, 0.3);
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(204, 97%, 50%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+button[type="submit"]:hover{
+    background-color: hsl(204, 97%, 42%);
+}
+.card{
+    font-family: Arial;
+    background: linear-gradient(170deg, hsl(204, 100%, 84%), hsl(49, 97%, 62%));
+    padding: 50px;
+    box-shadow: 2px 7px 10px hsl(0, 0%, 0%, 0.5);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+}
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+}
+p{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+.humidityDisplay{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.weatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+    text-align: center;
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}

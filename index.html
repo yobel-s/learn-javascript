@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    <h1 id="myH1"></h1>
+    <p id="paragraft1"></p> 
+    -->
+
+    <!-- 
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p> 
+    -->
+
+    <!-- 
+    <h1 id="sayhi">Welcome</h1>
+    
+    <label>username:</label>
+    <input id="username"><br><br>
+    <button id="submit">submit</button>
+     -->
+
+    <!-- <h1>Enter the radius of circle</h1>
+    <label>radius:</label>
+    <input type="text" id="input">
+    <button id="submit">submit</button>
+    <h3 id="myh3"></h3> -->
+
+    <!-- <label id="countLabel">0</label><br>
+    <div id="btncontainer">
+        <button id="decrease" class="button">decrease</button>
+        <button id="reset" class="button">reset</button>
+        <button id="increase" class="button">increase</button>
+    </div> -->
+
+    <!-- <button id="myButton">roll</button><br>
+    <label id="myLabel1" class="myLabel"></label>
+    <label id="myLabel2" class="myLabel"></label>
+    <label id="myLabel3" class="myLabel"></label> -->
+
+    <!-- <label id="">Enter your Age</label><br>
+    <input type="text" id="myText"><br>
+    <button type="submit" id="mySubmit">submit</button>
+    <p id="resultElement"></p> -->
+
+    <!-- <input type="checkbox" id="myCheckbox">
+    <label for="checkbox">subscribe</label><br>
+    
+    <input type="radio" id="visaButton" name="card">
+    <label for="visaButton">visa</label>
+    
+    <input type="radio" id="mastercardButton" name="card">
+    <label for="mastercardButton">mastercard</label>
+    
+    <input type="radio" id="paypalButton" name="card">
+    <label for="paypalButton">paypal</label>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p> -->
+
+    <!-- TEMPERATURE CONVERSION PROGRAM -->
+
+    <!-- <form>
+
+        <h1>Temperature conversion</h1>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celcius ➡️ Fahrenheit</label><br>
+
+        <input type="radio" id="toCelcius" name="unit">
+        <label for="toCelcius">Fahrenheit ➡️ Celcius</label><br>
+
+        <button type="button" onclick="convert()">submit</button>
+        <p id="result"></p>
+        
+    </form> -->
+
+    <!-- ----- DICE ROLL PROGRAM ----- -->
+
+    <!-- <div id="container">
+        <h1>Dice Roller</h1>
+        <label># of dice</label>
+        <input type="number" value="1" min="1" id="numOfDice">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div> -->
+
+    <!-- ----- Timeout Function ----- -->
+    
+    <!-- <button onclick="startTimer()">START</button>
+    <button onclick="clearTimer()">CLEAR</button> -->
+
+    <!-- ----- CLOCK ----- -->
+    
+    <h1 class="head1">Clock</h1>
+
+    <div id="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+
+    <H1 class="head1">Stopwatch</H1>
+
+    <div id="stopwatch-container">
+        <div id="display">
+            00:00:00:00
+        </div><br>
+        <div id="controls">
+            <button id="startButton" onclick="start()" class="button">Start</button>
+            <button id="stopButton" onclick="stop()" class="button">Stop</button>
+            <button id="resetButton" onclick="reset()" class="button">Reset</button>
+
+            <!-- <button id="startButton">Start</button>
+            <button id="stopButton">Stop</button>
+            <button id="resetButton">Reset</button> -->
+
+        </div>
+    </div><br>
+
+    <!-- FOR CALCULATOR  -->
+
+    <h1 class="head1">Calculator</h1>
+    
+    <div id="calculator">
+        <input id="screen" readonly title="Calculator Display">
+        <div id="keys">
+            <button class="buttons" onclick="appendToDisplay('+')">+</button>
+            <button class="buttons" onclick="appendToDisplay('7')">7</button>
+            <button class="buttons" onclick="appendToDisplay('8')">8</button>
+            <button class="buttons" onclick="appendToDisplay('9')">9</button>
+            <button class="buttons" onclick="appendToDisplay('-')">-</button>
+            <button class="buttons" onclick="appendToDisplay('4')">4</button>
+            <button class="buttons" onclick="appendToDisplay('5')">5</button>
+            <button class="buttons" onclick="appendToDisplay('6')">6</button>
+            <button class="buttons" onclick="appendToDisplay('*')">*</button>
+            <button class="buttons" onclick="appendToDisplay('1')">1</button>
+            <button class="buttons" onclick="appendToDisplay('2')">2</button>
+            <button class="buttons" onclick="appendToDisplay('3')">3</button>
+            <button class="buttons" onclick="appendToDisplay('/')">/</button>
+            <button class="buttons" onclick="appendToDisplay('0')">0</button>
+            <button class="buttons" onclick="appendToDisplay('.')">.</button>
+            <button class="buttons" onclick="calculate()">=</button>
+            <button class="buttons" onclick="clearDisplay()">CE</button>
+        </div>
+    </div>
+
+    <!-- CSS IN HTML -->
+
+    <!-- <h1 id="goodbye-msg">Have a good day! ~ </h1>
+
+    <h1 id="my-heading">CSS using JS</h1>
+
+    <div class="my-fruits">Apple</div>
+    <div class="my-fruits">Orange</div>
+    <div class="my-fruits">Banana</div>
+
+    <h4>Root Vegetables</h4>
+    <ul>
+        <li>Beets</li>
+        <li>Carrots</li>
+        <li>Potatoes</li>
+    </ul>
+
+    <h4>Non Root Vegetables</h4>
+    <ul>
+        <li>Brocoli</li>
+        <li>Tomato</li>
+        <li>Spinach</li>
+    </ul> -->
+
+    <!-- DOM NAVIGATION -->
+
+    <!-- <ul id="fruits">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+    </ul>
+
+    <ul id="vegetables">
+        <li id="carrot">carrot</li>
+        <li id="union">union</li>
+        <li id="potatoes">potatoes</li>
+    </ul>
+    
+    <ul id="deserts">
+        <li id="cake">cake</li>
+        <li id="pie">pie</li>
+        <li id="ice cream">ice cream</li>
+    </ul> -->
+    
+    <!-- ADD & CHANGE HTML  -->
+
+    <!-- <div id="box1" class="box">
+        <p>Box1</p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>Box2</p>
+    </div>
+
+    <div id="box3" class="box">
+        <p>Box3</p>
+    </div>
+
+    <div id="box4" class="box">
+        <p>Box4</p>
+    </div> -->
+
+    <!-- example 2  -->
+
+    <!-- <ol id="fruits">
+        <li class="list" id="apple">apple</li>
+        <li class="list" id="orange">orange</li>
+        <li class="list" id="banana">banana</li>
+    </ol> -->
+
+    <!-- MOUSE EVENTS  -->
+
+    <h1 class="head1">Click Me!</h1>
+
+    <div id="mouse-events">
+        Click Me 😂
+    </div>
+
+    <!-- CONTROL EVENTS  -->
+
+    <h1 class="head1">You Can Control Me!</h1>
+    <p >hint: ⬅️⬆️➡️⬇️</p>
+
+    <div id="angry">😡</div><br>
+
+    <!-- HIDE AN ELEMENTS -->
+
+    <h1 class="head1" id="clickKill">Click to Kill!</h1>
+
+    <button id="hide">Shoot Him!</button><br>
+
+    <!-- NODELIST -->
+
+    <!-- <button class="node-list">Button 1</button>
+    <button class="node-list">Button 2</button>
+    <button class="node-list">Button 3</button>
+    <button class="node-list">Button 4</button> -->
+
+    <!-- CLASS LIST -->
+
+    <!-- <button id="class-list">My button</button> -->
+
+    <!-- another example -->
+    
+    <!-- <button class="button-class">Button 1</button>
+    <button class="button-class">Button 2</button>
+    <button class="button-class">Button 3</button>
+    <button class="button-class">Button 4</button> -->
+
+    <!-- ROCK PAPER SCISSOR PROGRAM -->
+
+    <h1 class="head1">Rock - Paper - Scissor</h1>
+
+    <div class="choices">
+    
+        <!-- inside "playGame('rock')" after double quote using single quote -->
+
+    <button onclick="playGame('rock')">🗿</button>
+    <button onclick="playGame('paper')">🧻</button>
+    <button onclick="playGame('scissor')">✂️</button>
+
+    </div>
+
+    <div id="playerDisplay">Player:</div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay"></div>
+
+    <!-- score display -->
+
+    <div class="scoreDisplay">Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <!--  IMAGE SLIDER  -->
+
+    <h1 class="head1"></h1>
+
+    <div class="slider">
+
+        <div class="slides">
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+            <img class="slide" src="images/footage_images/photo-one.jpg" alt="image-1">
+            <img class="slide" src="images/footage_images/photo-two.jpg" alt="image-2">
+            <img class="slide" src="images/footage_images/photo-three.jpg" alt="image-3">
+            <img class="slide" src="images/footage_images/photo-four.jpg" alt="image-4">
+            <img class="slide" src="images/footage_images/photo-five.jpg" alt="image-5">
+        </div>
+
+    </div>
+
+    <!--  ----- FETCH DATA ----- -->
+
+    <H1 class="head1">Choice Your Poke</H1>
+
+    <input type="text" id="pokemonName" placeholder="Enter Pokemon Name"><br>
+    <button id="search-button" onclick="fetchData()">Search</button><br>
+
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+
+    <!--  ----- BUILD WEATHER APP AND FETCH DATA FROM API ----- -->
+
+    <h1 class="head1">Weather App</h1>
+
+    <form class="weather-form">
+        <input type="text" class="cityInput" placeholder="Enter city">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none">
+        <!-- <h1 class="cityDisplay">Delik City</h1>
+        <p class="tempDisplay">10°F</p>
+        <p class="humidityDisplay">Humidity: 75%</p>
+        <p class="descDisplay">Clear Skies</p>
+        <p class="weatherEmoji">☀️</p>
+        <p class="errorDisplay">Please enter a city</p> -->
+    </div>
+
+    <script src="index.js"></script> 
+    <!-- <script type="module" src="index.js"></script> --> <!-- module for ES6 module -->
+</body>
+</html>
